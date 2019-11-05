@@ -1,0 +1,19 @@
+# maven #
+target/
+
+# idea #
+.idea/
+*.iml
+
+# eclipse #
+.settings/
+.classpath
+.project
+
+# log #
+*.log
+log/
+
+# jpt #
+/.apt_generated/
+.factorypath

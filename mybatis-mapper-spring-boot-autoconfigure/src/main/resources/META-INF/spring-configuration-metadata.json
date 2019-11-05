@@ -1,0 +1,68 @@
+{
+    "groups": [
+        {
+            "name": "mybatis-mapper.setting",
+            "type": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties"
+        }
+    ],
+    "properties": [
+        {
+            "name": "mybatis-mapper.setting.enable",
+            "type": "java.lang.Boolean",
+            "description": "Whether to enable the mybatis-mapper plugin, enabled by default",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": true
+        },
+        {
+            "name": "mybatis-mapper.setting.enable-logger",
+            "type": "java.lang.Boolean",
+            "description": "Whether to enable global log printing",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": true
+        },
+        {
+            "name": "mybatis-mapper.setting.enable-mapper-scan-log",
+            "type": "java.lang.Boolean",
+            "description": "Whether to enable mapper scan log, this configuration depends on whether 'enableLogger' is enabled.",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": true
+        },
+        {
+            "name": "mybatis-mapper.setting.enable-runtime-log",
+            "type": "java.lang.Boolean",
+            "description": "Whether to enable printing SQL running log, this configuration depends on whether 'enableLogger' is enabled.",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": true
+        },
+        {
+            "name": "mybatis-mapper.setting.enable-compilation-log",
+            "type": "java.lang.Boolean",
+            "description": "Whether to enable printing SQL compilation log, this configuration depends on whether 'enableLogger' is enabled.",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": true
+        },
+        {
+            "name": "mybatis-mapper.setting.enable-xml-syntax-parsing",
+            "type": "java.lang.Boolean",
+            "description": "Whether to enable xml syntax parsing, enable to use XML template syntax parsing, disabled by default",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": false
+        },
+        {
+            "name": "mybatis-mapper.setting.enable-keywords-to-uppercase",
+            "type": "java.lang.Boolean",
+            "description": "Keyword case conversion, using lowercase keywords by default",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": false
+        },
+        {
+            "name": "mybatis-mapper.setting.database-column-style",
+            "type": "java.lang.String",
+            "description": "Database column style, default is '#'",
+            "sourceType": "com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperProperties",
+            "defaultValue": "#"
+        }
+    ],
+    "hints": []
+}

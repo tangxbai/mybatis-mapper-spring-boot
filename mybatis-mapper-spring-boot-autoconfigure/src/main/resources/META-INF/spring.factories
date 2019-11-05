@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperLanguageDriverAutoConfiguration,\
+com.viiyue.plugins.mybatis.spring.boot.autoconfigure.MybatisMapperAutoConfiguration

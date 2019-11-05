@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.viiyue.plugins.mybatis.spring.boot.samples.mapper.AccountMapper">
+
+	<!-- 
+	~ 查询节点如果不写resultType/resultMap属性的话，在方法上标注@EnableResultMap，
+	~ 可以引用插件生成的BaseResultMap结果映射，也可以显式地指明resultMap引用。
+	~
+	~ @EnableResultMap
+	~ List<AccountDTO> selectByLoginName( String loginName );
+	~
+	~ <select id="selectByLoginName" resultMap="BaseResultMap">
+	~     ....
+	~ </select>
+	-->
+	<select id="selectByLoginName">
+		// 单行注释
+		// 支持大小写关键字转换，凡是包裹在“[]”中的任何文本，都会被转换成全大写或全小写文本。
+		[select]
+
+		-- SQL注释
+		-- 输出表的所有列
+		-- 注意：注释不支持#注释，#会和mybatis的取值表达式冲突，所以不要使用#注释
+		@{this.columns}
+
+		-- 不用在乎换行和空白会影响SQL，这会在模板解析的时候被移除掉，只保留完整的SQL脚本
+		-- 换行和空格会被替换成一个空格，所以换行不会影响最终SQL脚本
+		[from]
+
+		/* 单行文本注释 */
+		/* 输出表明 */
+		@{this.table}
+
+		/**
+		 * 多行文本注释多行文本注释
+		 * 多行文本注释多行文本注释
+		 * 多行文本注释多行文本注释
+		 * 多行文本注释多行文本注释
+		 */
+		[where]
+
+		// 所有程序通用的单行注释也是支持的
+		// 内容可以直接写表达式，也可以结合mybatis的逻辑标签，没有任何限制。
+		// 使用以下这种写法的好处在于，如果你数据库字段和JavaBean字段名不匹配，你可以使用@Column(name)对其进行更改，而无需更改SQL脚本
+		@{this.column.loginName} = #{loginName}
+	</select>
+
+</mapper>

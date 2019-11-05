@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2019 the original author or authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.viiyue.plugins</groupId>
+		<artifactId>plugin-release-parent</artifactId>
+		<version>1</version>
+		<relativePath />
+	</parent>
+	
+	<artifactId>mybatis-mapper-spring-boot</artifactId>
+	<version>1.2.0</version>
+	<packaging>pom</packaging>
+
+	<name>mybatis-mapper-spring-boot</name>
+	<url>https://github.com/tangxbai/mybatis-mapper-spring-boot</url>
+	<description>Spring Boot Mybatis-mapper</description>
+
+	<inceptionYear>2019</inceptionYear>
+
+	<modules>
+		<module>mybatis-mapper-spring-boot-starter</module>
+		<module>mybatis-mapper-spring-boot-autoconfigure</module>
+    	<module>mybatis-mapper-spring-boot-samples</module>
+  	</modules>
+
+	<properties>
+		<spring-boot.version>2.1.0.RELEASE</spring-boot.version>
+		<mybatis-mapper-spring.version>1.2.0</mybatis-mapper-spring.version>
+		<mybatis-boot-autoconfigure.version>2.1.1</mybatis-boot-autoconfigure.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.viiyue.plugins</groupId>
+				<artifactId>mybatis-mapper-spring-boot-starter</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.viiyue.plugins</groupId>
+				<artifactId>mybatis-mapper-spring-boot-autoconfigure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-autoconfigure</artifactId>
+				<version>${mybatis-boot-autoconfigure.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.viiyue.plugins</groupId>
+				<artifactId>mybatis-mapper-spring</artifactId>
+				<version>${mybatis-mapper-spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>ossrh</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestone</id>
+			<name>Spring Milestone</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-snapshot</id>
+			<name>Spring Snapshot</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestone</id>
+			<name>Spring Milestone</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-snapshot</id>
+			<name>Spring Snapshot</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
