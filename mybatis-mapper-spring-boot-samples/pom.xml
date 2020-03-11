@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.viiyue.plugins</groupId>
 		<artifactId>mybatis-mapper-spring-boot</artifactId>
-		<version>1.3.0</version>
+		<version>1.3.1</version>
 	</parent>
 
 	<artifactId>mybatis-mapper-spring-boot-samples</artifactId>
