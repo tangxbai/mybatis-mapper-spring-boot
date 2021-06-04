@@ -1,6 +1,6 @@
 ![mybatis](http://mybatis.github.io/images/mybatis-logo.png)
 
-# Mybatis-mapper-spring-boot-starter
+# Mybatis-mapper-spring-boot
 ![version](https://img.shields.io/badge/release-1.3.0-blue) [![maven central](https://img.shields.io/badge/maven%20central-1.3.0-brightgreen)](https://maven-badges.herokuapp.com/maven-central/org.mybatis/mybatis) [![license](https://img.shields.io/badge/license-Apache%202.0-blue)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Mybatis-mapper关于springboot的整合组件，使用它将给你带来沉浸式的开发体验，极简化的配置，丰富的Api。
@@ -18,8 +18,8 @@ Mybatis-mapper关于springboot的整合组件，使用它将给你带来沉浸�
 ## 项目演示
 
 - java + mybatis-mapper - [点击获取]( https://github.com/tangxbai/mybatis-mapper-demo)
-- spring + mybatis-mapper- [点击获取]( https://github.com/tangxbai/mybatis-mapper-spring-demo)
-- springboot + mybatis-mapper- [点击获取]( https://github.com/tangxbai/mybatis-mapper-spring-boot/mybatis-mapper-spring-boot-samples)
+- spring + mybatis-mapper - [点击获取]( https://github.com/tangxbai/mybatis-mapper-spring-demo)
+- springboot + mybatis-mapper - [点击获取](https://github.com/tangxbai/mybatis-mapper-spring-boot/tree/master/mybatis-mapper-spring-boot-samples)
 
 
 

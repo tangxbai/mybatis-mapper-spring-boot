@@ -20,4 +20,4 @@ mybatis-mapper关于springboot的示例项目，本项目中演示了关于mybat
 - 邮箱：tangxbai@hotmail.com
 - 掘金： https://juejin.im/user/5da5621ce51d4524f007f35f
 - 简书： https://www.jianshu.com/u/e62f4302c51f
-- Issuse：https://github.com/tangxbai/mybatis-mapper-/issues 
+- Issuse：https://github.com/tangxbai/mybatis-mapper-spring-boot/issues 

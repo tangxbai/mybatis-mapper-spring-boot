@@ -13,9 +13,9 @@ mybatis-mapper关于springboot的自动装配组件，在springboot中是比较�
 
 ## 包含组件
 
-- mybatis-spring-boot-autoconfigure - mybatis-spring的自动装配组件
-- mybatis-mapper-spring-boot-autoconfigure - mybatis-mapper的自动装配
-- mybatis-mapper-spring - mybatis-mapper-spring组件
+- mybatis-spring-boot-autoconfigure - mybatis-spring自动装配组件；
+- mybatis-mapper-spring-boot-autoconfigure - mybatis-mapper自动装配组件；
+- mybatis-mapper-spring - mybatis-mapper-spring关于整合spring的组件；
 
 
 
@@ -26,4 +26,4 @@ mybatis-mapper关于springboot的自动装配组件，在springboot中是比较�
 - 邮箱：tangxbai@hotmail.com
 - 掘金： https://juejin.im/user/5da5621ce51d4524f007f35f
 - 简书： https://www.jianshu.com/u/e62f4302c51f
-- Issuse：https://github.com/tangxbai/mybatis-mapper-/issues 
+- Issuse：https://github.com/tangxbai/mybatis-mapper-spring-boot/issues 
